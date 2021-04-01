@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learn Bootstrap by doing!</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <Style>
+      .card{
+        background-color: rgba(138, 232, 239, 0.74);
+      }
+    </Style>
+
+
+    <!-- Add Bootstrap <link> below -->
+    
+<link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body style="background-color: rgba(229, 226, 46, 0.69)">
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm fixed-top" style="background-color:rgba(44, 144, 136, 1) !important">
+        <div class="navbar-brand"> <img src="data:image/png;base64,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"
+          alt="Learn Bootstrap by Doing!" width="30px" height="30px"> Bootstrap</div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="collapsibleNavbar" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item px-4"><a class="nav-link" href="#html-container">HTML</a></li>
+            <!-- <li class="nav-item mr-auto dropdown">
+              <a 
+              class="nav-link dropdown-toggle px-4"
+              href="#css-container"
+              role="button"
+              id="navbarDropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              data-toggle="dropdown">CSS</a> -->
+
+              <li class="nav-item px-4"><a class="nav-link" href="#css-container">CSS</a>
+
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a href="#" class="dropdown-item">Plain CSS</a>
+                <a href="#" class="dropdown-item">Bootstrap CSS</a>
+              </div>
+            </li>
+          </ul>
+        </div>        
+    </nav>
+
+    <div id="html-container" class="container mb-5">
+      <h3 class="my-5" style="padding-top: 100px">HTML</h3>
+      <div class="row">
+        <div class="col-xl-3 col-sm-6 col-lg-6 col-12 mb-4 d-flex">
+          <div class="card flex-fill">
+            <p class="card-header bg-dark text-white">Fact 1</p>
+            <!-- <img class="card-img-top flex-fill" src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt="HTML Image"/> -->
+            <div class="card-body">
+              <p class="card-text"> The &lt;option&gt; tag defines an option in a select list.</p>
+              <a href="https://www.crio.do" class="btn btn-primary">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-lg-6 col-12 mb-4 d-flex">
+          <div class="card flex-fill">
+            <p class="card-header bg-dark text-white">Fact 2</p>
+            <div class="card-body">
+              <p class="card-text"> An RGB color value is specified with: rgb(red, green, blue).</p>
+              <a href="https://www.crio.do" class="btn btn-primary">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-lg-6 col-12 mb-4 d-flex">
+          <div class="card flex-fill">
+            <p class="card-header bg-dark text-white">Fact 3</p>
+            <div class="card-body">
+              <p class="card-text">The first version of HTML was written by Tim Berners-Lee in 1993.</p>
+              <a href="https://www.crio.do" class="btn btn-primary">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-lg-6 col-12 mb-4 d-flex ">
+          <div class="card flex-fill ">
+            <p class="card-header bg-dark text-white">Fact 4</p>
+            <div class="card-body">
+              <p class="card-text">&lt;Picture&gt; element makes it easy in specifying img resources.</p>
+              <a href="https://www.crio.do" class="btn btn-primary">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-lg-6 col-12 mb-4 d-flex">
+          <div class="card flex-fill ">
+            <p class="card-header bg-dark text-white">Fact 5</p>
+            <div class="card-body">
+              <p class="card-text"> An element with position: fixed; is positioned relative to the VP.</p>
+              <a href="https://www.crio.do" class="btn btn-primary">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-lg-6 col-12 mb-4 d-flex">
+          <div class="card flex-fill ">
+            <p class="card-header bg-dark text-white">Fact 6</p>
+            <div class="card-body">
+              <p class="card-text">The &lt;select&gt; element is used to create a drop-down list.</p>
+              <a href="https://www.crio.do" class="btn btn-primary">More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="css-container" class="container mb-5">
+      <h3 class="mb-5 mt-0">CSS</h3>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-6 col-xl-3 mb-4">
+          <div class="card" style="height: 200px">
+            <div class="card-body">
+              <p class="card-text" style="height: 80px; overflow-x: scroll; width: 100%; ">CSS is used for defining the presentation of a document written in some markup language like HTML.</p>
+              <a href="https://www.crio.do" class="btn btn-primary">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-6 col-xl-3 mb-4">
+          <div class="card" style="height: 200px">
+            <div class="card-body">
+              <p class="card-text" style="height: 80px; overflow-x: scroll; width: 100%; ">Visibility property can be set to Collapse</p>
+              <a href="https://www.crio.do" class="btn btn-primary">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-6 col-xl-3 mb-4">
+          <div class="card" style="height: 200px">
+            <div class="card-body">
+              <p class="card-text" style="height: 80px; overflow-x: scroll; width: 100%; ">CSS stands for Cascading Style Sheets with an emphasis placed on “Style".</p>
+              <a href="https://www.crio.do" class="btn btn-primary">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-6 col-xl-3 mb-4">
+          <div class="card" style="height: 200px">
+            <div class="card-body">
+              <p class="card-text" style="height: 80px; overflow-x: scroll; width: 100%; ">A flex container expands items to fill available free space or shrinks them to prevent overflow.</p>
+              <a href="https://www.crio.do" class="btn btn-primary">More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start fixed-bottom">
+      <div class="text-center p-1" style="background-color: rgba(97, 157, 197, 0.2);">
+        &#169; 2021 Copyright : BootstrapModule
+      </div>
+    </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
